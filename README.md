@@ -1,61 +1,76 @@
-TBC Concept Showcase
-(README done by AI)
+# TBC Concept Showcase
+**_T_**urn **_B_**ased **_C_**ombat Simulator
+
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 This project is a simple turn-based combat simulator implemented in Python.
 
-Who is this program for?
+## Program Overview
+
+### Who is this program for?
 This program is primarily for individuals who enjoy simple, interactive text-based games. It can also be a useful example for those learning basic Python programming concepts, particularly:
 
-Object-oriented programming (OOP) through the combatant class.
-Working with lists and other data structures.
-Implementing game loops and turn-based logic.
-Basic input and output operations in Python.
-What does this program do? What does it automate?
+* Object-oriented programming (OOP) through the `combatant` class.
+* Working with lists and other data structures.
+* Implementing game loops and turn-based logic.
+* Basic input and output operations in Python.
+
+### What does this program do? What does it automate?
 This program simulates a battle between a player-controlled combatant and a computer-controlled enemy. It automates the following aspects of a simple combat scenario:
 
-Character Definition: It allows you to define combatants with different attributes like name, attack strengths, defense (heal), and health points.
-Turn-Based Gameplay: It manages the flow of combat, allowing the player to choose an action (attack or heal) in their turn, followed by a random action from the enemy.
-Action Resolution: It calculates and applies damage or healing based on the chosen actions.
-Game End Condition: It determines the winner (or a draw) based on the health points of the combatants reaching zero.
-Random Enemy Actions: The enemy's actions (which attack to use or whether to heal) are chosen randomly, providing a degree of unpredictability.
-Video/Screenshots
-Video Demonstration: [Link to your video here]
+* **Character Definition:** It allows you to define combatants with different attributes like name, attack strengths, defense (heal), and health points.
+* **Turn-Based Gameplay:** It manages the flow of combat, allowing the player to choose an action (attack or heal) in their turn, followed by a random action from the enemy.
+* **Action Resolution:** It calculates and applies damage or healing based on the chosen actions.
+* **Game End Condition:** It determines the winner (or a draw) based on the health points of the combatants reaching zero.
+* **Random Enemy Actions:** The enemy's actions (which attack to use or whether to heal) are chosen randomly, providing a degree of unpredictability.
 
-&lt;p align="center">
-&lt;img src="path/to/your/screenshot1.png" alt="Screenshot of the game" width="400">
-&lt;br>
-Screenshot of a combat turn.
-&lt;/p>
-&lt;p align="center">
-&lt;img src="path/to/your/screenshot2.png" alt="Another screenshot" width="400">
-&lt;br>
-Screenshot showing the combatant stats.
-&lt;/p>
+## Visual Showcase
 
-Keep your video and screenshot files in a location that GitHub can access (usually within your repository). Update the src attributes in the <img> tags and the video link accordingly.
+**Video Demonstration:** [Link to your video here]
 
-Installation
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e4cd3cb1-a3ef-4530-84de-2fd115a5b3e6" alt="Screenshot of a combat turn" width="400">
+  <br>
+  <em>Screenshot of a combat turn.</em>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7ec7ff50-4eef-419d-b087-9fc4fe03c77c" alt="Screenshot showing the combatant stats" width="400">
+  <br>
+  <em>Screenshot showing the combatant stats.</em>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bc46c497-6a27-4fa0-b624-82de6f8db79e" alt="Another game screenshot" width="400">
+  <br>
+  <em>Another screenshot of the game in progress.</em>
+</p>
+
+## Getting Started
+
+### Installation
 No explicit installation is required as this is a Python script. Ensure you have Python 3.x installed on your system.
 
-How to Run the Program
-Save the combatant.py, epic.py, and main.py files in the same directory.
-Open a terminal or command prompt and navigate to that directory.
-Run the main script using the command: python main.py
-Code Samples
+### How to Run the Program
+1.  Save the `combatant.py`, `epic.py`, and `main.py` files in the same directory.
+2.  Open a terminal or command prompt and navigate to that directory.
+3.  Run the main script using the command: `python main.py`
+
+## Code Highlights
+
 Here are a few code samples from the project demonstrating specific Python concepts:
 
-1. Using a collection (list) in the combatant class:
-
-This get_options method in the combatant class demonstrates the use of a list to store the combatant's available actions:
+### 1. Using a Collection (List) in the `combatant` class:
+This `get_options` method in the `combatant` class demonstrates the use of a list to store the combatant's available actions:
 
 ```python
 def get_options(self):
-Atks = []
-Atks.append(self.atk)
-Atks.append(self.atk2)
-Atks.append(self.atk3)
-Atks.append(self.def1)
-return Atks
-```
+    Atks = []
+    Atks.append(self.atk)
+    Atks.append(self.atk2)
+    Atks.append(self.atk3)
+    Atks.append(self.def1)
+    return Atks
 
 2. Using a loop in the main game logic:
 
