@@ -48,9 +48,6 @@ This program simulates a battle between a player-controlled combatant and a comp
 
 ## Getting Started
 
-### Installation
-No explicit installation is required as this is a Python script. Ensure you have Python 3.x installed on your system.
-
 ### How to Run the Program
 1.  Save the `combatant.py`, `epic.py`, and `main.py` files in the same directory.
 2.  Open a terminal or command prompt and navigate to that directory.
@@ -63,7 +60,7 @@ Here are a few code samples from the project demonstrating specific Python conce
 1. Using a Collection (List) in the combatant class:
 This get_options method in the combatant class demonstrates the use of a list to store the combatant's available actions:
 
-Python
+'''python
 
 def get_options(self):
     Atks = []
