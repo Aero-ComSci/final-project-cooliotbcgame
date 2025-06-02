@@ -26,7 +26,7 @@ This program simulates a battle between a player-controlled combatant and a comp
 
 ## Visual Showcase
 
-**Video Demonstration:** [Link to your video here]
+**Video Demonstration:** https://drive.google.com/file/d/1_WuoWR_SO6vIEVacO7Rwmmy3ElG0p3jn/view?usp=sharing
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e4cd3cb1-a3ef-4530-84de-2fd115a5b3e6" alt="Screenshot of a combat turn" width="400">
@@ -60,10 +60,11 @@ No explicit installation is required as this is a Python script. Ensure you have
 
 Here are a few code samples from the project demonstrating specific Python concepts:
 
-### 1. Using a Collection (List) in the `combatant` class:
-This `get_options` method in the `combatant` class demonstrates the use of a list to store the combatant's available actions:
+1. Using a Collection (List) in the combatant class:
+This get_options method in the combatant class demonstrates the use of a list to store the combatant's available actions:
 
-```python
+Python
+
 def get_options(self):
     Atks = []
     Atks.append(self.atk)
@@ -71,33 +72,29 @@ def get_options(self):
     Atks.append(self.atk3)
     Atks.append(self.def1)
     return Atks
-
-2. Using a loop in the main game logic:
-
+2. Using a Loop in the Main Game Logic:
 The while ongoing: loop in epic.py controls the main game flow, continuing until a win/lose/draw condition is met:
 
-```python
+Python
+
 ongoing = True
 while ongoing:
-print("Here are the combatants and their stats!")
-combatants = [player, enemy]
-for i in combatants:
-print(i)
-# ... rest of the game logic ...
-```
-
-3. Using a function (method) in the combatant class:
-
+    print("Here are the combatants and their stats!")
+    combatants = [player, enemy]
+    for i in combatants:
+        print(i)
+    # ... rest of the game logic ...
+3. Using a Function (Method) in the combatant class:
 The __str__ method is a special function in Python that defines how an object of the combatant class should be represented as a string:
 
-```python
-def str(self):
-bob = ""
-bob += str("Combatant: " + self.name + ": ")
-bob += str("Attack 1: " + str(self.atk) + ", ")
-bob += str("Attack 2: " + str(self.atk2) + ", ")
-bob += str("Attack 3: " + str(self.atk3) + ", ")
-bob += str("Heal: " + str(self.def1) + ", ")
-bob += str("Health: " + str(self.hp) + ", ")
-return bob
-```
+Python
+
+def __str__(self): # Corrected __str__ as it was `def str(self):` in your paste
+    bob = ""
+    bob += str("Combatant: " + self.name + ": ")
+    bob += str("Attack 1: " + str(self.atk) + ", ")
+    bob += str("Attack 2: " + str(self.atk2) + ", ")
+    bob += str("Attack 3: " + str(self.atk3) + ", ")
+    bob += str("Heal: " + str(self.def1) + ", ")
+    bob += str("Health: " + str(self.hp) + ", ")
+    return bob
