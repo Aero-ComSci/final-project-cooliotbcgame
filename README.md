@@ -1,5 +1,5 @@
 # TBC Concept Showcase
-**_T_**urn **_B_**ased **_C_**ombat Simulator
+_T_urn _B_**ased _C_ombat Simulator
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
@@ -37,13 +37,13 @@ This program simulates a battle between a player-controlled combatant and a comp
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7ec7ff50-4eef-419d-b087-9fc4fe03c77c" alt="Screenshot showing the combatant stats" width="400">
   <br>
-  <em>Screenshot showing the combatant stats.</em>
+  <em>Another screenshot of the game in progress.</em>
 </p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/bc46c497-6a27-4fa0-b624-82de6f8db79e" alt="Another game screenshot" width="400">
   <br>
-  <em>Another screenshot of the game in progress.</em>
+  <em>Screenshot showing the combatant stats.</em>
 </p>
 
 ## Getting Started
