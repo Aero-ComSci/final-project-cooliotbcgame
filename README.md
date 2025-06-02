@@ -69,10 +69,11 @@ def get_options(self):
     Atks.append(self.atk3)
     Atks.append(self.def1)
     return Atks
+  '''
 2. Using a Loop in the Main Game Logic:
 The while ongoing: loop in epic.py controls the main game flow, continuing until a win/lose/draw condition is met:
 
-Python
+'''python
 
 ongoing = True
 while ongoing:
@@ -81,10 +82,11 @@ while ongoing:
     for i in combatants:
         print(i)
     # ... rest of the game logic ...
+'''
 3. Using a Function (Method) in the combatant class:
 The __str__ method is a special function in Python that defines how an object of the combatant class should be represented as a string:
 
-Python
+'''python
 
 def __str__(self): # Corrected __str__ as it was `def str(self):` in your paste
     bob = ""
@@ -95,3 +97,4 @@ def __str__(self): # Corrected __str__ as it was `def str(self):` in your paste
     bob += str("Heal: " + str(self.def1) + ", ")
     bob += str("Health: " + str(self.hp) + ", ")
     return bob
+'''
