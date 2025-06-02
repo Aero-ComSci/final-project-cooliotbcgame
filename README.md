@@ -2,7 +2,6 @@
 _T_urn _B_**ased _C_ombat Simulator
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 This project is a simple turn-based combat simulator implemented in Python.
 
 ## Program Overview
