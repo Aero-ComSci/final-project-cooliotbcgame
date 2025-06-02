@@ -60,7 +60,7 @@ Here are a few code samples from the project demonstrating specific Python conce
 1. Using a Collection (List) in the combatant class:
 This get_options method in the combatant class demonstrates the use of a list to store the combatant's available actions:
 
-'''python
+```python
 
 def get_options(self):
     Atks = []
@@ -69,11 +69,11 @@ def get_options(self):
     Atks.append(self.atk3)
     Atks.append(self.def1)
     return Atks
-  '''
+  ```
 2. Using a Loop in the Main Game Logic:
 The while ongoing: loop in epic.py controls the main game flow, continuing until a win/lose/draw condition is met:
 
-Python
+```Python
 
 ongoing = True
 while ongoing:
@@ -82,10 +82,11 @@ while ongoing:
     for i in combatants:
         print(i)
     # ... rest of the game logic ...
+```
 3. Using a Function (Method) in the combatant class:
 The __str__ method is a special function in Python that defines how an object of the combatant class should be represented as a string for display:
 
-Python
+```Python
 
 def __str__(self):
     bob = ""
@@ -96,3 +97,4 @@ def __str__(self):
     bob += str("Heal: " + str(self.def1) + ", ")
     bob += str("Health: " + str(self.hp) + ", ")
     return bob
+```
